@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content modal__width">
+
+                <!-- Modal header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Тўлов тури</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="accordion">
+
+                        <!-- Alif nasiya -->
+                        <div class="card mb-4" >
+
+                            <!-- Accordion header -->
+                            <div class="card-header" id="headingOne">
+                                <div class="mb-0 modal__header">
+                                    <!-- Select  -->
+                                    <label for="alif" class="modal__header-right">
+                                        <div class="form-check">
+                                            <input id="alif" type="radio" name="myRadio" value="Alif nasiya"
+                                                class="list-style-type" />
+                                        </div>
+
+                                        <img class="acc-item1-img" src="./images/alif.png" alt="alif" width="120"
+                                            height="auto">
+
+                                        <select class="acc-item1-deadline" id="alifDeadline">
+                                            <option selected value="12 oy">12 oy</option>
+                                            <option value="24 oy">24 oy</option>
+                                        </select>
+
+                                        <p class="acc-item1-price" id="alifPrice">ойига 441 583 cўм</p>
+                                    </label>
+
+                                    <!-- Open-Close btn -->
+                                    <button class="btn " data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <img class="chewron-icon" src="./images/icons8-chevron-25.png" alt="jajaja"
+                                            width="20" height="auto">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Accardion body -->
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="
+                                            border-left: 5px solid gold; 
+                                            padding-left: 10px;">
+                                        Қулай қисмли тўлов</p>
+                                    <p style="
+                                            background-color:rgb(230, 230, 230); 
+                                            padding: 8px 5px; 
+                                            border-radius: 8px; 
+                                            font-weight: bold;">
+                                        Тўлов миқдори: максимал чегарани ҳисобга олган ҳолда</p>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Муддати (ойлар)</div>
+                                        <div style="width: 50%;" id="alifDeadlineCollapsed">12</div>
+                                    </div>
+                                    <hr>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Ойлик тўлов</div>
+                                        <div style="width: 50%;" id="alifMonthPriceCollapsed">ойига 441 583 cўм
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Умумий тўлов миқдори</div>
+                                        <div style="width: 50%;" id="alifFullPiceCollapsed">5 299 000 cўм</div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Intend -->
+                        <div class="card mb-4">
+                            <!-- Accordion header -->
+                            <div class="card-header" id="headingTwo">
+                                <div class="mb-0 modal__header">
+                                    <!-- Select  -->
+                                        <label for="intend" class="modal__header-right">
+                                            <div class="form-check">
+                                                <input id="intend" type="radio" name="myRadio" value="In Tend"
+                                                    class="list-style-type" />
+                                            </div>
+
+                                            <img class="acc-item1-img" src="./images/intend.png" alt="alif" width="120"
+                                                height="auto">
+
+                                            <select class="acc-item1-deadline" id="intendDeadline">
+                                                <option selected value="12 oy">12 oy</option>
+                                            </select>
+
+                                            <p class="acc-item1-price" id="intendPrice">ойига 441 583 cўм</p>
+                                        </label>
+
+                                    <!-- Open-Close btn -->
+                                    <button class="btn " data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        <img class="chewron-icon" src="./images/icons8-chevron-25.png" alt="jajaja"
+                                            width="20" height="auto">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Accardion body -->
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="
+                                            border-left: 5px solid gold; 
+                                            padding-left: 10px;">
+                                        Муддатли тўловми? Жуда қулай <br />
+                                        Танланг, олинг ва кейин тўланг</p>
+                                    <p style="
+                                            background-color:rgb(230, 230, 230); 
+                                            padding: 8px 5px; 
+                                            border-radius: 8px; 
+                                            font-weight: bold;">
+                                        Тўлов миқдори: максимал чегарани ҳисобга олган ҳолда</p>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Муддати (ойлар)</div>
+                                        <div style="width: 50%;">12</div>
+                                    </div>
+                                    <hr>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Ойлик тўлов</div>
+                                        <div style="width: 50%;">ойига 441 583 cўм</div>
+                                    </div>
+                                    <hr>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Умумий тўлов миқдори</div>
+                                        <div style="width: 50%;">5 299 000 cўм</div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paymart -->
+                        <div class="card mb-4 ">
+
+                            <!-- Accordion header -->
+                            <div class="card-header" id="headingFour">
+                                <div class="mb-0 modal__header">
+
+                                    <!-- Select  -->
+                                    <label for="paymart" class="modal__header-right">
+
+                                        <div class="form-check">
+                                            <input id="paymart" type="radio" name="myRadio" value="Paymart"
+                                                class="list-style-type" />
+                                        </div>
+
+                                        <img class="acc-item1-img" src="./images/paymart.png" alt="alif" width="120"
+                                            height="auto">
+
+                                        <select class="acc-item1-deadline" id="paymartDeadline">
+                                            <option selected value="12 oy">12 oy</option>
+                                        </select>
+
+                                        <p class="acc-item1-price" id="paymartPrice">ойига 441 583 cўм</p>
+                                    </label>
+
+
+                                    <!-- Open-Close btn -->
+                                    <button class="btn " data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="true" aria-controls="collapseFour">
+                                        <img class="chewron-icon" src="./images/icons8-chevron-25.png" alt="jajaja"
+                                            width="20" height="auto">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Accardion body -->
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="
+                                            border-left: 5px solid gold; 
+                                            padding-left: 10px;">
+                                        Paymart - ҳозир сотиб олинг, кейинроқ тўланг! <br />
+                                        Товарларни олдиндан тўловсиз ҳозироқ олинг</p>
+                                    <p style="
+                                            background-color:rgb(230, 230, 230); 
+                                            padding: 8px 5px; 
+                                            border-radius: 8px; 
+                                            font-weight: bold;">
+                                        Тўлов миқдори: максимал чегарани ҳисобга олган ҳолда</p>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Муддати (ойлар)</div>
+                                        <div style="width: 50%;">12</div>
+                                    </div>
+                                    <hr>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Ойлик тўлов</div>
+                                        <div style="width: 50%;">ойига 441 583 cўм</div>
+                                    </div>
+                                    <hr>
+
+                                    <div style="display: flex;">
+                                        <div style="width: 50%;">Умумий тўлов миқдори</div>
+                                        <div style="width: 50%;">5 299 000 cўм</div>
+                                    </div>
+                                    <hr>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning text-dark" data-dismiss="modal"
+                        id="submitBtn">Yuborish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const elAlifDeadline = document.querySelector("#alifDeadline");
+        const elAlifPrice = document.querySelector("#alifPrice");
+
+        const elIntendDeadline = document.querySelector("#intendDeadline");
+        const elIntendPrice = document.querySelector("#intendPrice");
+
+        const elPaymartDeadline = document.querySelector("#paymartDeadline");
+        const elPaymartPrice = document.querySelector("#paymartPrice");
+
+        const elAlifDeadlineCollapsed = document.querySelector("#alifDeadlineCollapsed");
+        const elAlifMonthPriceCollapsed = document.querySelector("#alifMonthPriceCollapsed");
+        const elAlifFullPriceCollapsed = document.querySelector("#alifFullPiceCollapsed");
+
+        const elHeadingAccardion = document.querySelectorAll(".card");
+        const elListStyleType = document.querySelectorAll('.list-style-type');
+
+        const submitBtn = document.querySelector("#submitBtn")
+
+        let deadline
+        let price
+        let companyName
+
+        elAlifDeadline.onclick = function (e) {
+
+            if (e.target.value === "12 oy") {
+                elAlifPrice.textContent = "ойига 441 583 cўм"
+                elAlifDeadlineCollapsed.textContent = "12 oy"
+                elAlifMonthPriceCollapsed.textContent = "ойига 441 583 cўм"
+                elAlifFullPriceCollapsed.textContent = "5 299 000 cўм"
+                deadline = elAlifDeadlineCollapsed.textContent
+                price = elAlifMonthPriceCollapsed.textContent
+            }
+            else if (e.target.value === "24 oy") {
+                elAlifPrice.textContent = "ойига 255 146 cўм"
+                elAlifDeadlineCollapsed.textContent = "24 oy"
+                elAlifMonthPriceCollapsed.textContent = "ойига 255 146 cўм"
+                elAlifFullPriceCollapsed.textContent = "6 123 500 cўм"
+                deadline = elAlifDeadlineCollapsed.textContent
+                price = elAlifMonthPriceCollapsed.textContent
+            };
+        }
+
+
+        for (let i = 0; i <= 2; i++) {
+
+            elListStyleType[i].addEventListener("change", (e) => {
+                companyName = e.target.value;
+
+                if (companyName === "Alif nasiya" && elListStyleType[i].checked) {
+                    deadline = elAlifDeadlineCollapsed.textContent
+                    price = elAlifMonthPriceCollapsed.textContent
+                }
+                else if (companyName === "In Tend") {
+                    deadline = elIntendDeadline.value
+                    price = elIntendPrice.textContent
+                }
+                else if (companyName === "Paymard") {
+                    deadline = elPaymartDeadline.value
+                    price = elPaymartPrice.textContent
+                }
+            })
+        }
+
+        submitBtn.onclick = function () {
+            console.log(companyName);
+            console.log(deadline);
+            console.log(price);
+        }
+
+
+
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
